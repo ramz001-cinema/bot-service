@@ -1,0 +1,30 @@
+{
+  "name": "bot-service",
+  "version": "1.0.0",
+  "description": "A telegram bot service for the cinema application that handles interactions with users through messaging platforms.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "@Ramz001",
+  "license": "MIT",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.18.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "typescript": "^7.0.2"
+  }
+}
