@@ -8,6 +8,6 @@
     "dist",
     "src/**/*.spec.ts"
   ],
-  "exec": "ts-node -r tsconfig-paths/register src/index.ts",
+  "exec": "ts-node -r tsconfig-paths/register src/main.ts",
   "delay": 100
 }

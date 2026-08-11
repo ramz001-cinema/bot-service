@@ -2,11 +2,11 @@
   "name": "bot-service",
   "version": "1.0.0",
   "description": "A telegram bot service for the cinema application that handles interactions with users through messaging platforms.",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "format": "prettier --write \"src/**/*.ts\"",
-    "start": "node src/index.ts",
+    "start": "node src/main.ts",
     "build": "tsc",
     "dev": "nodemon"
   },
@@ -23,11 +23,10 @@
       "onFail": "download"
     }
   },
-  "type": "module",
   "devDependencies": {
-    "@ramz001-cinema/core": "^1.1.1",
-    "@types/node": "^26.1.2",
-    "eslint": "^10.8.0",
+    "@ramz001-cinema/core": "^1.1.2",
+    "@types/node": "^26.2.0",
+    "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
     "nodemon": "^3.1.14",
     "prettier": "^3.9.6",
@@ -37,6 +36,7 @@
   },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "telegraf": "^4.16.3"
+    "telegraf": "^4.16.3",
+    "zod": "^4.4.3"
   }
 }
