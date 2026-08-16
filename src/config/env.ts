@@ -5,7 +5,8 @@ dotenv.config()
 
 const envVariables = z.object({
 	GRPC_URL: z.url().nonempty(),
-	BOT_TOKEN: z.string().nonempty()
+	BOT_TOKEN: z.string().nonempty(),
+	REDIRECT_ORIGIN: z.string().nonempty()
 })
 
 export const env = envVariables.parse(process.env)
