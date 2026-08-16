@@ -1,16 +1,8 @@
 {
+  "extends": "@ramz001-cinema/core/tsconfig/core",
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2021",
     "rootDir": "src",
     "outDir": "dist",
-    "declaration": true,
-    "strict": false,
-    "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": false,
     "types": [
       "node"
     ]

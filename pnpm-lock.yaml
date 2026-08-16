@@ -218,8 +218,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@ramz001-cinema/core':
-        specifier: ^1.1.2
-        version: 1.1.2(@eslint/js@10.0.1(eslint@10.8.1(supports-color@5.5.0)))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1(supports-color@5.5.0)))(eslint@10.8.1(supports-color@5.5.0))(prettier@3.9.6))(eslint@10.8.1(supports-color@5.5.0))(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))
+        specifier: ^1.2.2
+        version: 1.2.2(@eslint/js@10.0.1(eslint@10.8.1(supports-color@5.5.0)))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1(supports-color@5.5.0)))(eslint@10.8.1(supports-color@5.5.0))(prettier@3.9.6))(eslint@10.8.1(supports-color@5.5.0))(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))
       '@types/node':
         specifier: ^26.2.0
         version: 26.2.0
@@ -324,8 +324,8 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@ramz001-cinema/core@1.1.2':
-    resolution: {integrity: sha512-80AsVdNI7jAAAqDiJ6Q7TxwThdljCAKTmkgV+6rw+LiCTlJtA4Ipo6/4MQVYnKNMxLyHdsJmI4yoIs/qkfgb2g==}
+  '@ramz001-cinema/core@1.2.2':
+    resolution: {integrity: sha512-JpCXSFQg5jxD5RvI774J7KCRvs0G0lQF2kdYKxW7WKEoUafQqg52JPH9TJupfYu2EaxLJKbR7fTiSkd8gX5abg==}
     peerDependencies:
       '@eslint/js': ^10.0.1
       eslint: ^10.8.0
@@ -341,8 +341,8 @@ packages:
   '@telegraf/types@7.1.0':
     resolution: {integrity: sha512-kGevOIbpMcIlCDeorKGpwZmdH7kHbqlk/Yj6dEpJMKEQw5lk0KVQY0OLXaCswy8GqlIVLd5625OB+rAntP9xVw==}
 
-  '@tsconfig/node10@1.0.12':
-    resolution: {integrity: sha512-UCYBaeFvM11aU2y3YPZ//O5Rhj+xKyzy7mvcIoAjASbigy8mHMryP5cK7dgjlz2hWxh1g5pLw084E0a/wlUSFQ==}
+  '@tsconfig/node10@1.0.13':
+    resolution: {integrity: sha512-gcLdvR9HO1ZJBypsOGqaP6TFEzb6vIta0KSTLt9NAQ6pXQO3cRgSVyCN6pzYqI9DlJgY71XKO0dpDhCf08b3pg==}
 
   '@tsconfig/node12@1.0.11':
     resolution: {integrity: sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==}
@@ -993,7 +993,7 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@ramz001-cinema/core@1.1.2(@eslint/js@10.0.1(eslint@10.8.1(supports-color@5.5.0)))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1(supports-color@5.5.0)))(eslint@10.8.1(supports-color@5.5.0))(prettier@3.9.6))(eslint@10.8.1(supports-color@5.5.0))(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))':
+  '@ramz001-cinema/core@1.2.2(@eslint/js@10.0.1(eslint@10.8.1(supports-color@5.5.0)))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1(supports-color@5.5.0)))(eslint@10.8.1(supports-color@5.5.0))(prettier@3.9.6))(eslint@10.8.1(supports-color@5.5.0))(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.8.1(supports-color@5.5.0))
       eslint: 10.8.1(supports-color@5.5.0)
@@ -1004,7 +1004,7 @@ snapshots:
 
   '@telegraf/types@7.1.0': {}
 
-  '@tsconfig/node10@1.0.12': {}
+  '@tsconfig/node10@1.0.13': {}
 
   '@tsconfig/node12@1.0.11': {}
 
@@ -1503,7 +1503,7 @@ snapshots:
   ts-node@10.9.2(@types/node@26.2.0)(typescript@6.0.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.12
+      '@tsconfig/node10': 1.0.13
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
