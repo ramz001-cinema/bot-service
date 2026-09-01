@@ -1,6 +1,7 @@
 import { Markup, Telegraf } from 'telegraf'
+import { TelegrafContext } from '../../../shared/interfaces'
 
-export function registerStartHandler(bot: Telegraf) {
+export function registerStartHandler(bot: Telegraf<TelegrafContext>) {
 	bot.start(async ctx => {
 		const sessionId = ctx.payload
 
@@ -15,5 +16,16 @@ export function registerStartHandler(bot: Telegraf) {
 				])
 			)
 		}
+
+		ctx.session.id = sessionId
+
+		await ctx.reply(
+			'Please to finish the authorization, send your phone number to the bot. You can do this by clicking the button below.',
+			Markup.keyboard([
+				Markup.button.contactRequest('Send my phone number')
+			])
+				.oneTime()
+				.resize()
+		)
 	})
 }
