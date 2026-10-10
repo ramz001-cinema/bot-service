@@ -1,3 +1,6 @@
+packages:
+  - '.'
+
 minimumReleaseAgeExclude:
   - '@ramz001-cinema/contracts'
   - '@ramz001-cinema/passport'
