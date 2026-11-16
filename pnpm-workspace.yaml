@@ -1,6 +1,9 @@
 packages:
   - '.'
 
+allowBuilds:
+  protobufjs: true
+
 minimumReleaseAgeExclude:
   - '@ramz001-cinema/contracts'
   - '@ramz001-cinema/passport'
