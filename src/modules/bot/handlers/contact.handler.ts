@@ -1,8 +1,7 @@
 import { Telegraf } from 'telegraf'
 import { TelegrafContext } from '../../../shared/interfaces'
-import { TelegramCompleteRequest } from '@ramz001-cinema/contracts/gen/auth/v1'
-import { authClient } from '../../../infrastructure/grpc/auth.server'
-import { lastValueFrom } from 'rxjs'
+import { type TelegramCompleteRequest } from '@ramz001-cinema/contracts/gen-grpc/auth/v1'
+import { telegramComplete } from '../../../infrastructure/grpc/auth.client'
 import { env } from '../../../config'
 
 export function registerContactHandler(bot: Telegraf<TelegrafContext>) {
@@ -22,9 +21,7 @@ export function registerContactHandler(bot: Telegraf<TelegrafContext>) {
 			phone
 		}
 
-		const { sessionId } = await lastValueFrom(
-			authClient.telegramComplete(request)
-		)
+		const { sessionId } = await telegramComplete(request)
 
 		await ctx.reply('The registration process is complete successfully.', {
 			reply_markup: {
